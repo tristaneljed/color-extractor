@@ -71,8 +71,6 @@ npz = np.load('color_names.npz')
 img_to_color = ImageToColor(npz['samples'], npz['labels'])
 
 img = cv2.imread('image.jpg')
-img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-
 print(img_to_color.get(img))
 ```
 
